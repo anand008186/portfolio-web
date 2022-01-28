@@ -6,24 +6,23 @@ function Contact() {
   const [User ,setUser] =useState({name:"",email:"",subject:"",message:""});
   const eventHandle = (e) =>{
     const {name,value} = e.target ;
-    setUser({...setUser , [name] : value})
-    console.log(User);
+    setUser({...User , [name] : value});
+    
   }
 
   const postMail = (e) =>{
      e.preventDefault();
      if(User.name && User.email && User.subject && User.message ){
-      emailJs.sendForm("service_zh5ef07","template_gup464q",e.target , "user_Sx9OLgc5iILzuG60lFW1k")
+      emailJs.send("service_zh5ef07","template_gup464q",User , "user_Sx9OLgc5iILzuG60lFW1k")
       .then((response) => {
        if ( response ) {
-         console.log(response.text);
          window.alert("MESSAGE SENT") ;
+         setUser({name:"",email:"",subject:"",message:""});
         }
-      },(error) => {
-       console.log(error.text);
-       window.alert("MESSAGE NOT SENT SUCCESSFULLY") ;
+      },(error) => { if (error){
+        window.alert("MESSAGE NOT SENT SUCCESSFULLY") ;}
    })
-   setUser({name:"",email:"",subject:"",message:""});
+   
      }
      else{
       window.alert("PLEASE FILL REQUIRED FIELDS")
