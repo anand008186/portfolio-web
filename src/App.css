@@ -1,38 +1,368 @@
-.App {
+*{
+  margin: 0px 0px;
+  padding: 0px 0px ;
+  box-sizing: border-box;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+.navbar-nav .nav-item .nav-link{
   text-align: center;
+  width:100px;
+  border-radius: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav .nav-item .nav-link:hover {
+ 
+  background-color: #f57208; 
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.home{
+  font-family: Roboto Slab;
+  background-image: url(./Images/bg.jpg);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.profile-container{
+  margin: 22px 0px 0px 0px;
+  padding: 0px 0px;
+}
+.profile-detail{
+  margin: 0px 0px;
+  padding: 0px 15px 0px 15px;
+}
+.profile-detail p{
+  text-align: center;
+}
+.profile-img{
+  margin: 10px 0px;
+  padding: 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.profilePic{
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.profile-detail h2{
+  font-family: cursive;;
+}
+.shape-img{
+  padding: 0px 0px ;
+  width:100%;
+}
+.goTop{
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+}
+.goTop:hover{
+  color: red ;
+}
+/* ABOUT PAGE CSS */ 
+ .about{
+  font-family:  Futura PT;
+} 
+.about-box{
+  width: 70%;
+  margin:auto;
+  color: black;
+  border-right: 1px solid #888888;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: -5px 5px 10px #888888;
+}
+.aboutPic{
+  width:100%;
+  height: 650px;
+}
+.about-box ul li{
+  color: #f57208;
+}
+.about-box ul li span{
+  color:black;
+}
+
+/* RESUME PAGE CSS */
+#Resume{
+  font-family: Montserrat ;
+}
+.resume-box{
+  width: 85%;
+  margin: auto;
+  
+}
+
+ul.resume-list li i{
+  padding: 25px 10px 25px 10px;
+  background-color: black;
+  line-height: 2.5;
+  text-align: center;
+  
+}
+ul.resume-list li i.lasti{
+  padding-bottom: 55px;
+  /* margin-bottom: 73px; */
+}
+ul.resume-list li i.firsti{
+  padding-top: 55px;
+}
+
+.resume-list{
+  margin-top: 20px;
+}
+.resume-list li{
+  line-height: 2;
+  text-align: center;
+}
+.tab-home{
+  border-left: 1px solid rgb(190, 189, 189);
+  
+}
+.tab-home ul li span{
+  height:20px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px 10px ;
+  background-color:#f57208 ;
+  font-size: .9rem;
+  color : white;
+  border-radius: 15px;
+
+}
+
+.tab-home  li{
+  color:#f57208;
+
+}
+.tab-home  li p{
+  color: black;
+}
+#programming-skills li{
+  margin: 5px 10px;
+  
+}
+.tab-home #programming-skills li .info{
+  color:black;
+}
+.tab-home #programming-skills .pline{
+  width: 250px;
+  height: 10px;
+  border-radius: 5px;
+  background:linear-gradient(to right,#f57208 80% , rgb(204, 198, 198) 80% 100%)
+}
+.tab-home #programming-skills #pline1{
+  background:linear-gradient(to right,#f57208 90% , rgb(204, 198, 198) 90% 100%)
+}
+.tab-home #programming-skills #pline2{
+  background:linear-gradient(to right,#f57208 90% , rgb(204, 198, 198) 90% 100%)
+}
+.tab-home #programming-skills #pline3{
+  background:linear-gradient(to right,#f57208 75% , rgb(204, 198, 198) 75% 100%)
+}
+.tab-home #programming-skills #pline5{
+  background:linear-gradient(to right,#f57208 70% , rgb(204, 198, 198) 70% 100%)
+}
+.tab-home #programming-skills #pline8{
+  background:linear-gradient(to right,#f57208 60% , rgb(204, 198, 198) 60% 100%)
+}
+
+
+.tab-home  ul li p{
+  font-size: .87rem;
+}
+
+/* 
+ ul .custom-li span{
+  display: inline-block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+} 
+ .nav-bar ul .custom-li button:active{
+  background: black;
+
+}  */
+
+.nav-pills li a{
+  width: 220px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(to right, black 50%, white 50%) !important;
+  background-size: 200% 100% !important; 
+  background-position: right top !important;
+  transition: all .5s ease-out;
+  border-radius: 0px 30px 30px 0px !important;
+
+}
+
+.nav-pills li a.active{
+  background-position: left top !important;
+}
+/* .nav-pills li.li1 a{
+  width: 200px;
+  height: 50px;
+  position:relative;
+}
+.nav-pills li.li1 a:before{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #888888 ;
+  position: absolute;
+  left:-100px;
+  top:25%;
+} */
+
+
+
+
+
+/*CONTACT CSS */
+.contact{
+  height: 100vh;
+  font-family: Montserrat;
+}
+.hline{
+  width:60px;
+  margin:  auto;
+  height: 10px;
+  border-radius: 5px;
+  background-color:  #f57208;
+  position:relative;
+}
+.hline:before{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #888888 ;
+  position: absolute;
+  left:-80px;
+  top:25%;
+}
+.hline:after{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #888888 ;
+  position: absolute;
+  left:60px;
+  top:25%;
+}
+.contact-box{
+  width:75%;
+  height: 70%;
+  margin:auto;
+  color: white;
+  background-color: black;
+  box-shadow: -30px 30px 20px #888888;
+}
+.mailPic{
+  margin-top:30px;
+  height:60%
+}
+
+.contact-form{
+  margin: 50px 5px 5px 0px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  height:85%;
+  
+}
+.contact-form button{
+  width: 118px;
+  height:36px;
+  font-size: 1rem;
+   background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 10px 0 rgba(229, 66, 10, 0.75); 
+    transition: all .5s ease-out ; 
+} 
+.contact-form button:hover{
+  font-size: 1.1rem;
+  width: 128px;
+  height:45px;
+}
+
+
+/* //media queries */
+
+@media (min-width: 992px) {
+  .tab-content{
+    height: 270px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 992px) {
+  /* HOME CSS */
+  .profile-container{
+    height: auto;
+  }
+  .profilePic{
+    width: 250px;
+  }
+  /* ABOUT PAGE CSS */
+
+  .about-box{
+    width: 90%;
+  }
+  .tab-home #programming-skills .pline{
+      width: 200px;
+
+  }
+  .nav-pills li a{
+    width: 180px;
+  }
+
+  /* RESUME PAGE CSS */
+
+  .resume-box{
+    width:95%;
+  }
+  /* CONTACT PAGE CSS */
+  .contact{
+    height:auto;
+  }
+  .hline{
+    margin: 25px 0px;
+  }
+}
+
+
+@media only screen and (max-width: 992px) and (min-width: 576px) {
+    
+    .contact-box{
+      box-shadow:none;
+    }
+    .tab-content{
+      height: 310px;
+    }
+    ul.resume-list li i.lasti{
+      padding-bottom: 25px;
+    }
+   
+   
+}
+@media (max-width: 576px) {
+  ul.resume-list li i.lasti{
+    padding-bottom: 25px;
+  }
+  .tab-content{
+    height: 400px;
+  }
+  .nav-pills li a{
+    width: 300px;
+  }
+  .aboutPic{
+    width:100%;
+    height: 500px;
   }
 }
