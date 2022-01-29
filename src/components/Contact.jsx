@@ -70,7 +70,7 @@ function Contact() {
                     <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea shadow-none" placeholder='Message' value={User.message} onChange={eventHandle}></textarea>
                     <label htmlFor="message">Your message</label>
                 </div>
-                <button type="submit" className="btn btn-md mb-3" ><i class="bi bi-envelope-fill"></i><span><strong> Message</strong></span> </button>
+                <button type="submit" className="btn btn-md mb-3 shadow-none" ><i className="bi bi-envelope-fill"></i><span><strong> Message</strong></span> </button>
     </form>
     </div>
        

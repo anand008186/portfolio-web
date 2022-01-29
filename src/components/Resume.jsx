@@ -38,7 +38,7 @@ export default function Resume() {
 
 {/* <!-- Tab panes --> */}
 <div className='col-lg-8 col-md-8 col-sm-12 tab-home '>
-<div className="tab-content ">
+<div className="tab-content d-flex align-items-center ">
   <div className="tab-pane active " id="education" role="tabpanel" aria-labelledby="home-tab">
     <ul>
       <li> 
@@ -107,11 +107,11 @@ export default function Resume() {
   <div className="tab-pane" id="projects" role="tabpanel" aria-labelledby="messages-tab">
   <ul>
       <li> 
-         <div className='d-flex justify-content-between'><h6>Personal Portfolio Website</h6> <span>2022</span> </div>
+         <div className='d-flex justify-content-between'><h6><a href="https://anand008186.github.io/portfolio-web" target="_blank" rel="noopener noreferrer"> Personal Portfolio Website</a></h6> <span>2022</span> </div>
         <p><strong>Technologies Used: React JS,Bootstrap</strong></p>
         </li>
       <li>
-      <div className='d-flex justify-content-between'><h6><a href="http://" target="_blank" rel="noopener noreferrer"></a> Mern App </h6><span>2021</span></div>
+      <div className='d-flex justify-content-between'><h6><a href="https://anand-mernapp.herokuapp.com" target="_blank" rel="noopener noreferrer">Mern App</a></h6>  <span>2021</span></div>
         <p><strong>Technologies Used: React JS,Node JS, Express JS, Mongo Db, Bootstrap</strong></p>
       </li>
       <li>
